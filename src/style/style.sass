@@ -1,0 +1,584 @@
+//src/style/app.sass
+// $orange_color : #ED462F
+$select_color: #66D1C6
+$input_gray_color: #868686
+
+body 
+    background: $input_gray_color
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    
+    #root
+        width: 50.3545%
+        min-width: 900px
+        max-width: 1194px
+
+
+    .Window
+        background: #ffffff
+        width: 100%
+        height: 704px
+        margin-top: 10%
+        padding: 1px 0
+        font-family: 'Open Sans', sans-serif;
+        border-radius: 15px;
+        position: relative
+
+        #dialog_window
+            position: absolute
+            width: 100%
+            height: 800px
+            top: -50px
+           
+            background: $input_gray_color
+
+
+            #dialog_box
+                position: absolute
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-wrap: wrap
+                width: 396px
+                height: 213px
+                background: #FFFFFF;
+                border: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                border-radius: 15px;
+                left: 250px
+                top: 200px
+                z-index: 10
+
+                .Check_button
+                    cursor: pointer
+                    border: 1px solid #ED462F
+                    box-sizing: border-box
+                    border-radius: 50px
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 18px
+                    line-height: 25px
+                    padding: 6px 40px 6px 40px
+                    color: #ED462F
+
+                span
+                    font-family: Open Sans, sans-serif;
+                    text-align: center
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 100.18%;
+                    width: 100%
+                    padding-top: 20px
+                    
+                
+                div
+                    font-family: Open Sans, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 24px;
+                    /* identical to box height */
+                    width: 100%
+                    text-align: center
+
+            
+    
+    
+
+        p
+            
+            font-style: normal;
+            font-weight: bold
+            font-size: 30px;
+            line-height: 177.68%;
+            width: 100%
+            text-align: center
+            margin-top: 50px 
+
+        .Type_of_insurance
+            border-radius: 5px 0px 0px 5px
+            text-align: center
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 25px
+            margin-top: 75px
+            -webkit-user-select: none
+            -moz-user-select: none
+            -ms-user-select: none
+            user-select: none
+            width: 100%
+
+            .OMS
+                cursor: pointer
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                background: #ED462F
+                color: #FFFFFF
+                padding: 13px 40px 13px 40px
+                border-radius: 5px 0px 0px 5px
+                border: 1px solid rgba(0, 0, 0, 0.13)
+                box-sizing: border-box
+
+            .DMS
+                cursor: pointer
+                border: 1px solid rgba(0, 0, 0, 0.13)
+                box-sizing: border-box
+                border-radius: 0px 5px 5px 0px
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                color: #626262
+                padding: 13px 40px 13px 40px
+
+        
+        .container_policy-number_and_insurance-company
+            display: flex
+            position: relative
+            // flex-wrap: wrap
+            flex-direction: row
+            align-items: stretch
+            width: 100%
+            min-width: 500px
+            height: 100px
+            margin-top: 5%
+            font-style: normal
+            font-weight: normal
+            font-family: Open Sans, sans-serif
+
+            #date_policy
+                position: absolute
+                font-size: 14px
+                top: 43%
+                left: 10.136%
+
+            #numberPhone_SK
+                position: absolute
+                font-size: 14px
+                top: 43%
+                left: 57.25%
+
+
+
+            .Police_number_col-1
+                order: 1
+                position: relative
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 55%
+                height: 35px
+                
+
+                input
+                    width: 81.996%
+                    height: 35px
+                    border: 1px solid #868686
+                    box-sizing: border-box
+                    border-radius: 50px
+                    padding-left: 5%
+                    outline: 0 !important
+                    margin-left: 7.89%
+                    font-size: 18px;
+
+
+            .Insurance_company_col-2
+                order: 2
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                // line-height: 19px
+                max-width: 37.546%
+                min-width: 362.98px
+                height: 170px
+                position: relative
+                
+
+                
+
+                nav 
+                    height: 100%
+                    // background: white
+                    width: 100%
+                    font-family: Open Sans, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    z-index: 2
+                    
+                    
+
+                    ul li ul li 
+                        clear: both;
+                        width: 100%;
+
+
+
+                    ul li ul 
+                        
+                        visibility: hidden;
+                        opacity: 0;
+                        min-width: 5rem;
+                        position: absolute;
+                        transition: all 0.5s ease;
+                        margin-top: 1rem;
+                        left: 0;
+                        display: none;
+
+                    ul 
+                        width: 100%
+                        list-style: none;
+                        margin: 0;
+                        padding-left: 0;
+                        height: 114px
+                        padding-bottom: 0
+                        z-index: 2
+                         
+                    .ul_border
+                        background: #ffffff
+                        width: 363px
+                        list-style: none;
+                        margin: 0;
+                        padding-left: 0;
+                        height: 186.65px
+                        padding: 0
+                        z-index: 2
+                        
+                      
+                        
+                        
+
+                        #click_li
+                            border: 1px solid #868686;
+                            border-radius: 50px;
+                            margin: 0
+                            width: 363px
+                            height: 36.5px;
+                            color: #86868611;
+                            padding-left: 5%
+                            padding-top: 10px
+                            display: block;
+                            float: left;
+                            position: relative;
+                            text-decoration: none;
+                            z-index: 2
+                            box-sizing: border-box;
+                            cursor: pointer
+                            
+
+                            img
+                                position: absolute
+                                top: 15%
+                                left: 5%
+                            
+                            
+
+                            a 
+                                text-decoration: none;
+                                
+                                color: $input_gray_color
+                                font-family: Open Sans, sans-serif;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 13px;
+
+                            #selectbox
+                                padding: 0
+                                margin: 0
+
+                                li
+                                    background: #ffffff
+                                    left: 0px
+                                    position: absolute
+                                    line-height: 24px;
+                                    font-family: Open Sans, sans-serif;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    width: 308px;
+                                    height: 38px;
+                                    color: black;
+                                    padding-bottom: 0
+                                    display: block;
+                                    float: left;
+                                    padding-left: 15%
+                                    padding-top: 15px 
+                                    // padding-top: 5px 
+                                    text-decoration: none;
+                                    z-index: 2
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    
+
+                                    img
+                                        position: absolute
+                                        top: 25%
+                                        left: 5%
+                                    
+
+                                // li:first-child
+                                    
+                                    
+
+                                li:nth-child(2)
+                                    top: 65px
+                                    vertical-align: bottom
+                                    height: 38px;
+                                    
+
+
+
+                                li:last-child
+                                    border-bottom: 1px solid #66D1C6;
+                                    border-bottom-right-radius: 15px
+                                    border-bottom-left-radius: 15px
+                                    height: 42px
+                                    top: 108.35px
+                                    height: 38px;
+                                    
+
+                                li:hover,
+                                li:focus-within 
+                                    background: $select_color;
+                                    cursor: pointer;
+                                    z-index: 2
+                                    color: white
+
+
+                            
+        .Medical_service
+            
+            width: 100%
+            font-family: Open Sans, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 24px
+            height: 300px
+            position: relative
+            
+            // display: flex
+            // flex-flow: row wrap;
+            // align-content: center;
+            // justify-content: center;
+            // height: 35px
+            section
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 177.68%;
+                margin-left: 9.4%
+                margin-bottom: 1%
+                display: flex;
+                align-items: center;
+
+            .search_service
+                display: flex
+                align-items: center
+                justify-content: center
+
+
+                #search_block:focus
+                    border: 1px solid $select_color
+
+                #search_block
+                    // padding-top: 10px
+                    border: 0px solid #868686
+                    box-sizing: border-box
+                    border-radius: 15px
+                    // height: 230px
+                    width: 825px
+                    margin: 0
+                    z-index: 1
+                    position: relative
+
+                    #selected_service
+                        display: flex
+                        flex-wrap: wrap
+                        z-index: 2
+                        width: 100%
+                        position: absolute
+                        top: 45px
+                        left: 30px
+                        padding-top: 20px
+                        overflow-y: auto;
+                        max-height: 180px
+                        border-bottom-right-radius: 0px
+
+                        li
+                            list-style: none
+                            font-family: Open Sans,sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            width: 50%
+                            z-index: 2
+                            
+                            // height: 40px
+                            margin-bottom: 15px
+
+                            img
+                                vertical-align: -20%
+                                margin-right: 6px
+                                width: 18px
+                                height: 18px
+
+                            a   
+                                vertical-align: middle
+                                width: 15px
+                                height: 15px
+                                cursor: pointer
+                                
+                                img
+                                    margin-left: 9px
+                                    vertical-align: -2%
+                                    width: 12px
+                                    height: 12px
+
+                    #layer_3
+                        z-index: 3
+                        position: relative
+                        border-radius: 15px
+
+
+                        #selectBlock
+                            width: 823px
+                            max-height: 161px
+                            margin: 0
+                            padding: 0
+                            overflow-y: auto;
+                            background: #ffffff
+                            z-index: 3
+                            border-bottom-left-radius: 15px
+                            border-bottom-right-radius: 15px
+                            
+
+                            li
+                                height: 38.68px
+                                width: calc( 823px - 3.5% )
+                                list-style: none
+                                margin: 0
+                                padding-left: 3.5%
+                                padding-top: 15px 
+                                
+                                z-index: 3
+                                -webkit-user-select: none
+                                -moz-user-select: none
+                                -ms-user-select: none
+                                user-select: none
+                            
+                            
+                                
+                            // li:first-child
+                                // margin-top: 12px
+
+                            li:last-child
+                                border-bottom-left-radius: 14px
+                                border-bottom-right-radius: 14px
+
+                            li:hover
+                                background: $select_color
+
+                        input
+                            width: 823px
+                            height: 35px
+                            background-color: transparent
+                            border: 1px solid #868686
+                            box-sizing: border-box
+                            border-radius: 50px
+                            outline: 0 !important
+                            padding-left: 3.5%
+                            z-index: 3
+                            border: 1px solid #868686
+                            // box-sizing: border-box
+                            border-radius: 50px
+                            
+                        input:focus
+                            border-color: $select_color
+
+        .Check_button_div            
+            widows: 100%
+            display: flex
+            align-items: center
+            justify-content: center    
+            -webkit-user-select: none
+            -moz-user-select: none
+            -ms-user-select: none
+            user-select: none
+
+            .Check_button_active
+                cursor: pointer
+                border: 1px solid #ED462F
+                background: #ED462F
+                box-sizing: border-box
+                border-radius: 50px
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 25px
+                padding: 6px 40px 6px 40px
+                color: #ffffff
+
+            .Check_button_new
+                cursor: default
+                border: 1px solid $select_color
+                background: $select_color
+                box-sizing: border-box
+                border-radius: 50px
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 25px
+                padding: 6px 40px 6px 40px
+                color: #ffffff
+            
+            
+            .Check_button
+                cursor: pointer
+                border: 1px solid #ED462F
+                box-sizing: border-box
+                border-radius: 50px
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 25px
+                padding: 6px 40px 6px 40px
+                color: #ED462F
+
+
+
+::-webkit-scrollbar
+    position: absolute
+    width: 18px;
+    border-bottom-right-radius: 0px
+    
+                        
+::-webkit-scrollbar-track 
+    background: #ffffff;
+    border-right: 0px solid #CCEEF4;
+    border-bottom: 0px solid #CCEEF4;
+    border-bottom-right-radius: 0px
+                        
+::-webkit-scrollbar-thumb
+    width: 8px;
+    background: #ffffff ;
+    border: 1px solid $select_color;
+    border-radius: 15px
+   
+                        
+::-webkit-scrollbar-thumb:hover 
+    background: $select_color
+
